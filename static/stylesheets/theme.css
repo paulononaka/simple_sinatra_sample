@@ -153,6 +153,7 @@ section#intro{
 
 /* featured */
 .featured {
+  height: 450px;
   background:none;
   padding:0;
   padding-bottom:30px;
