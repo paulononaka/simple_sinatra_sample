@@ -20,6 +20,12 @@ module Sharing
                                     :lon => longitude.to_f
     end
 
+    def random_photo_url
+      @photos ||= client.photos.search(:user_id => "97874346@N07")
+      photo = @photos.photo[Random.rand(@photos.count)]
+      FlickRaw.url_b(photo)
+    end
+
     def photo_url(photo_id)
       info = client.photos.getInfo(:photo_id => photo_id)
       FlickRaw.url_b(info)

@@ -19,7 +19,10 @@ configure do
 end
 
 get '/' do
-  haml :index
+  haml :index, :locals => {
+    :random_photo_url1 => flickr.random_photo_url,
+    :random_photo_url2 => flickr.random_photo_url,
+    :random_photo_url3 => flickr.random_photo_url }
 end
 
 post '/upload_from_mobile' do
@@ -36,7 +39,7 @@ end
 
 post '/upload' do
   unless is_an_image? params[:photo]
-    session[:error] = "Please, upload an image"
+    session[:error] = "Por favor, insira uma imagem"
     redirect '/'
   end
 
@@ -57,7 +60,10 @@ end
 get '/show/:photo_id' do
   haml :show, :locals => { :photo_url => flickr.photo_url(params[:photo_id]),
                            :photo_id => params[:photo_id],
-                           :set_coordinates => session['set_coordinates'] }
+                           :set_coordinates => session['set_coordinates'],
+                           :random_photo_url1 => flickr.random_photo_url,
+                           :random_photo_url2 => flickr.random_photo_url,
+                           :random_photo_url3 => flickr.random_photo_url }
 end
 
 post '/coordinates/:photo_id/:latitude/:longitude' do
