@@ -78,7 +78,7 @@ h6 {
 }
 
 .headline{
-  background:url(../img/line.png) repeat-x center left;
+  background:url(../images/line.png) repeat-x center left;
   width:100%;
   padding:0;
   margin:20px 0 30px 0;
@@ -115,7 +115,7 @@ h6 {
 }
 .top-nav h1 { font-size:37px; height:31px; padding:0 0 0 36px;  line-height:30px; float:left; }
 
-.top-arrow { position:fixed; width:20px; height:18px;   margin-left:60px; background:url(../img/top-arrow.png) no-repeat; z-index:199; top:81px;display:block;
+.top-arrow { position:fixed; width:20px; height:18px;   margin-left:60px; background:url(../images/top-arrow.png) no-repeat; z-index:199; top:81px;display:block;
 
 }
 .top-nav2 { position:fixed; width:100%; height:4px;  background-color:#7298a5; z-index:200; top:0px;display:block; }
@@ -133,7 +133,7 @@ h6 {
   color:#f8f8f8;
   font-size:18px;
   line-height:32px;
-  background:url(../img/icons/phone.png) no-repeat left;
+  background:url(../images/icons/phone.png) no-repeat left;
   padding-left:30px;
 }
 
@@ -142,7 +142,7 @@ h6 {
 /* parallax */
 
 section#intro{
-  background:url(../img/bg/bg3.jpg) 50% 0 no-repeat fixed;
+  background:url(../images/bg/bg3.jpg) 50% 0 no-repeat fixed;
   color: #fff;
   max-height: 650px;
   height:auto;
@@ -253,7 +253,7 @@ ul.portfolio_list {
 }
 .da-thumbs li  article {
   position: absolute;
-  background-image:url(../img/hover/image_hover.png);
+  background-image:url(../images/hover/image_hover.png);
   background-repeat:repeat;
   width: 100%;
   height: 100%;
@@ -321,7 +321,7 @@ span.link_post{
   background-color:#dc5333;
   border-radius:50px;
   cursor:pointer;
-  background-image:url(../img/hover/link_post_icon.png);
+  background-image:url(../images/hover/link_post_icon.png);
   background-repeat:no-repeat;
   background-position:center;
   margin-right:10px;
@@ -335,7 +335,7 @@ span.zoom{
   background-color:#dc5333;
   border-radius:50px;
   cursor:pointer;
-  background-image:url(../img/hover/zoom_icon.png);
+  background-image:url(../images/hover/zoom_icon.png);
   background-repeat:no-repeat;
   background-position:center;
   margin-left:10px;
@@ -458,7 +458,7 @@ background-image: -webkit-linear-gradient(#e65841, #d73d2c); }
 
 section#bottom {
   width: 100%;
-  background:url(../img/bg/bg2.jpg) 50% 0 no-repeat fixed;
+  background:url(../images/bg/bg2.jpg) 50% 0 no-repeat fixed;
   color: #fff;
   max-height: 650px;
   height:auto;
@@ -509,9 +509,6 @@ p.copyright {
   display:inline;
 }
 
-.social { width:160px; margin:0 auto; display:block; height:30px; }
-.fb { float:left; width:75px; height:24px; margin-right:10px; display:block;  background:url(../img/facebook.png)  no-repeat; }
-.tw { float:left; width:75px; height:24px;   display:block;  background:url(../img/twitter.png)  no-repeat; }
 .copy { clear:both; text-align:center; margin-top:20px; color:#678C99; }
 .copy p span { font-size:18px; font-family: 'Oleo Script', cursive; }
 .copy p  { font-size:14px; font-family: 'Lato', sans-serif; }

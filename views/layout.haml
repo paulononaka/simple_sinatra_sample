@@ -1,0 +1,73 @@
+!!!
+%head
+  %meta{:charset => "utf-8"}
+  %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}
+  %title Change brazil!
+  %meta{:content => "", :name => "keywords"}
+  %meta{:content => "", :name => "description"}
+  / css
+  %link{:href => "/stylesheets/bootstrap.css", :rel => "stylesheet"}
+  %link{:href => "/stylesheets/bootstrap-responsive.css", :rel => "stylesheet"}
+  %link{:href => "/stylesheets/sequence.css", :rel => "stylesheet"}
+  %link{:href => "/stylesheets/theme.css", :rel => "stylesheet"}
+  %link{:href => '/stylesheets/styles.css', :rel => 'stylesheet' }
+  / Favicon
+  %link{:href => "/images/favicon.ico", :rel => "shortcut icon"}
+  / js
+  %script{:src => "/javascripts/jquery.min.js"}
+  %script{:src => "/javascripts/bootstrap.js"}
+  %script{:src => "/javascripts/jquery.prettyPhoto.js"}
+  %script{:src => "/javascripts/sequence.jquery.js"}
+  %script{:src => "/javascripts/jquery-hover-effect.js"}
+  %script{:src => "/javascripts/custom.js"}
+  :javascript
+    jQuery(function() {
+      jQuery('ul.da-thumbs > li').hoverdir();
+    });
+%body
+  .main-wrap
+    %header
+      .top-nav
+        .wrapper
+          .logo
+            %a{:href => "/"}
+            %h1 Change Brazil!
+    %section#intro
+      .featured
+        .wrapper
+          .row-fluid
+            / slider
+            .span12
+              #sequence-theme
+                #sequence
+                  %img.prev{:alt => "Anterior", :src => "/images/slides/bt-prev.png"}
+                  %img.next{:alt => "Próximo", :src => "/images/slides/bt-next.png"}
+                  %ul
+                    %li.animate-in
+                      %h2.title Lorem ipsum
+                      %h5.subtitle Lorem ipsum dolor sit amet, veritus molestie et his.
+                      %img.model{:alt => "", :src => "http://static3.businessinsider.com/image/51c06f33ecad04f37b00002c-480-/brazil-world-cup-protests-masked-man-fire-1.jpg"}
+                    %li
+                      %h2.title Lorem ipsum
+                      %h5.subtitle Lorem ipsum dolor sit amet, veritus molestie et his.
+                      %img.model{:alt => "", :src => "http://static3.businessinsider.com/image/51c06f33ecad04f37b00002c-480-/brazil-world-cup-protests-masked-man-fire-1.jpg"}
+                    %li
+                      %h2.title Lorem ipsum
+                      %h5.subtitle Lorem ipsum dolor sit amet, veritus molestie et his.
+                      %img.model{:alt => "", :src => "http://static3.businessinsider.com/image/51c06f33ecad04f37b00002c-480-/brazil-world-cup-protests-masked-man-fire-1.jpg"}
+    %section#main-content
+      .content-wrap
+        .tagline
+          .wrapper
+            .image-editor= yield
+    %section#bottom
+      .bottom-cta
+        .wrapper
+          %h3.title Lorem ipsum
+          %h2 Lorem ipsum dolor sit amet, veritus molestie et his.
+          %a.btn.btn-red.btn-large{:href => "http://www.flickr.com/slideShow/index.gne?user_id=97874346@N07"} Veja todas as fotos!
+    %footer
+      .footer
+        .wrapper
+          .subfooter
+            %p.copyright © 2013 todos os direitos reservados.

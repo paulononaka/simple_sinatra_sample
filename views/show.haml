@@ -1,0 +1,6 @@
+.show
+  %div
+    %img.user-image{ :id => photo_id, :src => photo_url }
+
+- if set_coordinates
+  %script{ :type => 'text/javascript', :src => '/javascripts/geolocation.js' }
